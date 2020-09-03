@@ -1,4 +1,4 @@
-const http = require("http");
+const http = require('http');
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
@@ -18,7 +18,7 @@ const jokes = [
 ];
 
 const getIndex = (request,response) => {
-    response.writeHead(200, {'Content-Type': 'type/html', 'Access-Control-Allow-Origin':'*'});
+    response.writeHead(200, {'Content-Type': 'text/html', 'Access-Control-Allow-Origin':'*'});
     response.write(indexPage);
     response.end();
 };
